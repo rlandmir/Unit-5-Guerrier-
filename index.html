@@ -10,6 +10,7 @@
     <h1>Unit 5 Notes</h1>
     <hr>
     <br>
+    <a href="cssNotes.html"></a>
     <h1>Headers</h1>
     <p>Headers are used to creat pages titles and section header. There are 6 different sizes pre-formatted for Htm.</p>
     <h1>Computer science</h1>
@@ -43,6 +44,59 @@
     <hr>
 
 <br><hr>
+<h1 style="color: #T4d160">Attributes</h1><p><b> Attributes</b> are properties which can change an element.Attributes are written in the header tag or Any html elemnt. The most common attributes are <i>class</i>, <i>id</i>, and. </i></p><p> An <b> element</b> is a <i>block</i>element which inserts pictures into the document. An image elemnt is a self-closing element, which means it does not have have an end tag. It has one attribute, src,which is a filepath that points to the image location. Those filepaths can be either <b>absolute</b> or <b>relative.</b></p>
+
+<h2>Simple Image Example</h2>
+<img src="https://www.meissl.com/media/images/8f24db1f/schweiz.jpg">
+<p> There are 4 attributes commonly used for images. <i>width</i> and <i>height</i> are used to resize the imgae. <i>alt</i> allows to use text-description of image for accessibility and broken images. <i>title</i>
+allws a hover-over text to appear. </p>
+
+<h3>widtj amd height</h3>
+<p>The width and height can be measured in many different ways, but the more common ones are pixles and percentages. using pixels, you set the specific, precise side based on pixels. using pecentages, you set the dimensions based on a percentage of the entire page. percentage based re-sizomg will often respect aspect ratio while using pixels may not.</P
+
+    <img src="https://www.meissl.com/media/images/8f24db1f/schweiz.jpg" title="set width and height using pixels"width ="150px">
+    <img src="https://www.meissl.com/media/images/8f24db1f/schweiz.jpg" title ="set width using pixels and maintaining aspect ration" width="150px" height="150x">
+    <img src="https://www.meissl.com/media/images/8f24db1f/schweiz.jpg" title ="set width using pixels and maintaining aspect ration" width="50px" height="150x">
+    <h3> Alt attribute</h3>
+    <p>Every pitcture should at Least have the alt attibute. The alt attribute helps with screen readers for visual impaired users and in the cased that the image is broken.</p>
+    <img src="https://www.meissl.com/media/images/8f24db1f/schweiz.jpg" title ="broeken link without Alt " width="50px" height="150x">
+    <img src="https://www.meissl.com/media/images/8f24db1f/schweiz.jpg" title ="broekn link with Alt " width="50px" height="150x">
+
+    <h2> Relative vs. Absolute</h2>
+<p> An <b>absolute</b> filepath includes all the navigate to get to the server, folders and file. The example above are all absolute filepath. An absolute filepath is used when the image is stored on a diffrent server or device than the HTML document. </P>
+
+<p> A <b> relative</b> filepath only includes the folder and file. The example below are all relative filepaths. A relative filepath is used when the immage are stored alongside the HTML document.</p>
+
+<img> src="dear.jpg"> width="50%" alt="deer silhouette at sunset">
+
+<hr>
+<p>The <b>anchor elemnt</b> is a way to include hypertext link, otherwise known as just links, in your document. An anchor is a reference point for other documents or file. It commonly has 3 attributes: <i>href</i>, <i>target</i> and <i>download</i></p>
+
+    <h2>Simple Link</h2>
+    <a href ="https://www.webhamster.com/">LINK</a>
+    <p>In oder for a link to work is <b>Must</b> include the <i>href</i>
+    attribute This attribute is the filepath, either absolute or relative, to the document, website or file you wish to link</p>
+
+    <h2>links attributes</h2>
+    <p>The <i>target</i> attribute allows you to decide where the link opens. There are 4 options, but only one commnoly used.
+    .<i>_blank</i> opens the link document in a new window or tab. <i>_self</i>opens the link in the current window or tab.
+    This is the default behavior. The two other are only used if you have a frame or other window Inside a window. we will not be discussomg these</p>
+
+<a href="https//www.webhamster.com/" target="_blank">This link will open a new tab</a>
+
+<p>This <i>dowload</i> attribute allows you to download the file or document link. This is commonly used only with relative filepath</p>
+
+<a href="deer.jpg" download="deerpic">This link will download a deer picture</a>
+
+<h2> A picture as a link</h2>
+<p> Since a link has a opning and closing tag, we can place any html element as its content
+which includes pictires. we simply nest the img elemnt inside the anchor element.</p>
+
+    <a href="https://www.webhamster.com/" target="_blank">
+        <img src="deer. jpg" title="A picture as a lin" alt="deer in a meadow at sundown">
+    </a>
+    <h2>Link to another page</h2>
+    <a href="cssNotes.html"></a>
 
 </body>
 </html>
